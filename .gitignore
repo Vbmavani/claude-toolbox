@@ -1,0 +1,5 @@
+.DS_Store
+*.log
+.mcpb-cache/
+# The engine writes these when a mod loads.
+.claude-plugin/types/
