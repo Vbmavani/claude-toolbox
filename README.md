@@ -7,6 +7,7 @@ Everything I build for Claude and Claude Code: mods now, and other Claude use ca
 | Folder | What it holds |
 | --- | --- |
 | `mods/` | Mods that change Claude Code's interface or behaviour |
+| `skills/` | Skills that teach Claude a repeatable way of working |
 
 Add each new kind of thing in its own top-level folder.
 
@@ -27,6 +28,18 @@ Type this at the prompt of a terminal session, using the mod's name:
 ```
 
 Answer `y` to add the marketplace, then pick a scope.
+
+## Skills
+
+| Skill | What it does |
+| --- | --- |
+| `debate-partner` | Stress-tests an idea, decision or plan: steelmans your position, argues the other side with specific counterarguments, concedes real points, and wraps up with a verdict summary |
+
+Install by copying the skill folder into `~/.claude/skills/`:
+
+```bash
+cp -R skills/debate-partner ~/.claude/skills/
+```
 
 ## Contributing
 
