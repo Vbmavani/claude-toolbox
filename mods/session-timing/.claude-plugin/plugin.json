@@ -1,0 +1,1 @@
+{ "name": "session-timing", "version": "0.2.0", "description": "On request, opens a side pane showing when each turn, model call, tool call and subagent started and how long it took, in tables.", "types": "./types/index.d.ts" }

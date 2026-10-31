@@ -1,0 +1,6 @@
+{
+  "name": "api-cost",
+  "version": "0.1.0",
+  "description": "Shows what the current session, its subagents and its sub-sessions would have cost at Claude API prices, as a table",
+  "types": "./types/index.d.ts"
+}
