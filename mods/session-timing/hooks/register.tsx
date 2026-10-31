@@ -47,7 +47,7 @@ async function buildReport($: Dollar, isSummary: boolean): Promise<string> {
       .catch(() => ({}))
     const body = await readTail($, file)
     agents.push({
-      name: String(meta.description ?? entry.name).replace(/\|/g, '\\|'),
+      name: String(meta.description ?? entry.name).replace(/[\\|]/g, '\\$&'),
       type: String(meta.agentType ?? 'unknown'),
       turns: parseTurns(body.text),
     })

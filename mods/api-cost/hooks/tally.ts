@@ -161,7 +161,7 @@ function count(value: number): string {
 }
 
 function cell(text: string): string {
-  const flat = text.replace(/\s+/g, ' ').replace(/\|/g, '\\|')
+  const flat = text.replace(/\s+/g, ' ').replace(/[\\|]/g, '\\$&')
 
   return flat.length > 48 ? `${flat.slice(0, 47)}…` : flat
 }

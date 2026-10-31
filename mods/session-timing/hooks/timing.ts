@@ -22,7 +22,7 @@ const lastSegment = (name: string): string =>
   name.startsWith('mcp__') ? name.split('__').at(-1) ?? name : name
 
 const oneLine = (text: unknown, max = 60): string => {
-  const flat = String(text ?? '').replace(/\s+/g, ' ').trim().replace(/\|/g, '\\|')
+  const flat = String(text ?? '').replace(/\s+/g, ' ').trim().replace(/[\\|]/g, '\\$&')
   return flat.length > max ? `${flat.slice(0, max - 1)}…` : flat
 }
 
