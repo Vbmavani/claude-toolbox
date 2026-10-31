@@ -1,0 +1,9 @@
+{
+  "name": "claude-toolbox",
+  "owner": { "name": "Vbmavani" },
+  "plugins": [
+    { "name": "api-cost", "source": "./mods/api-cost" },
+    { "name": "session-timing", "source": "./mods/session-timing" },
+    { "name": "skill-scoreboard", "source": "./mods/skill-scoreboard" }
+  ]
+}

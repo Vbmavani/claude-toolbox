@@ -1,0 +1,6 @@
+{
+  "name": "skill-scoreboard",
+  "version": "0.1.0",
+  "description": "Scoreboard of which skills fire across sessions, and which installed skills never fire",
+  "types": "./types/index.d.ts"
+}
